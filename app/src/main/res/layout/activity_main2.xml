@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Note: A RecyclerView can also be used -->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="100dp"
+        android:clipToPadding="false">
+
+        <!-- Scrollable content -->
+
+
+
+        <!--        <com.google.android.material.chip.ChipGroup-->
+        <!--            android:id="@+id/chipGroup"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            >-->
+
+        <!--            <com.google.android.material.chip.Chip-->
+        <!--                android:checkable="true"-->
+        <!--                app:chipIconVisible="true"-->
+        <!--                app:closeIconVisible="true"-->
+        <!--                android:id="@+id/chip6"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Games" />-->
+
+        <!--            <com.google.android.material.chip.Chip-->
+        <!--                android:id="@+id/chip5"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Yoga" />-->
+
+        <!--            <com.google.android.material.chip.Chip-->
+        <!--                android:id="@+id/chip4"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Ecology" />-->
+
+
+        <!--        </com.google.android.material.chip.ChipGroup>-->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_margin="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:text="largetext" />
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        app:navigationIcon="@drawable/ic_menu_on_surface_24dp"
+        app:menu="@menu/bottom_app_bar_menu"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:src="@drawable/ic_add_on_secondary_24dp"
+        app:layout_anchor="@id/bottom_app_bar_menu"
+        />
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

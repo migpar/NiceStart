@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_context"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagePerfil"
+        android:layout_width="166dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/cara"
+        app:layout_constraintEnd_toEndOf="@id/guidelineMain2"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="@id/guidelineMain1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/myswipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/taporswipetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/purple_200"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_200"
+        app:animationDuration="300"
+        app:expandOnClick="true"
+        app:icon="@drawable/anim_vector"
+        app:inner_view="@layout/expandable_view"
+        app:startExpanded="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:title="Passengers"
+        tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/buttonMain"
+            style="@style/ButtonStraight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="openMain2"
+            android:text="Go"
+            app:layout_constraintEnd_toEndOf="@id/guidelineMain2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/guidelineMain1"
+            app:layout_constraintTop_toBottomOf="@id/imagePerfil" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineMain1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineMain2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
