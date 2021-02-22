@@ -46,6 +46,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nickname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white" />
@@ -68,6 +69,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"

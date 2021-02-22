@@ -33,6 +33,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nicknameregister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white" />
@@ -56,6 +57,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwsregister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -78,6 +80,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mailregister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white" />

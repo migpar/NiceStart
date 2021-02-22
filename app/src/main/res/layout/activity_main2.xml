@@ -59,16 +59,14 @@
     </androidx.core.widget.NestedScrollView>
 
 
-
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom_app_bar_menu"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-        app:navigationIcon="@drawable/ic_menu_on_surface_24dp"
         app:menu="@menu/bottom_app_bar_menu"
-        />
+        app:navigationIcon="@drawable/ic_menu_on_surface_24dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
