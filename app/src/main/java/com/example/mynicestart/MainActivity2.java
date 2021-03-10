@@ -17,6 +17,10 @@ import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
+/**
+ * @author miguel
+ *  @see MainActivity
+ */
 public class MainActivity2 extends AppCompatActivity {
 
 
