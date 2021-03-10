@@ -15,6 +15,10 @@ MainActivity2 | MainActivity2.menuOptions
 
 > Linux is love--"Ernesto Ramiro" :heart:
 
-Es esta actividad llevamos creadas desde el _slpashScreen_ hasta el _MainActivity_
+Es esta actividad llevamos creadas desde el _slpashScreen_ hasta el _MainActivity2_
 
-Incluyendo las pantallas de _login_ y _register_
+Incluyendo las pantallas de _login_ y _register_ y _MainActivity_
+
+En _MainActivity_ incluimos un menu con opciones, ExpandableCard y AlertDialog
+
+En _MainActivity2_ incluimos un menu con BottonAppBar
